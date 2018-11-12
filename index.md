@@ -1,6 +1,11 @@
+---
+title: Win32Service
+---
+
 # Win32Service projet
 
 This projet provide an PHP extension for running a custom PHP script like a Windows Service.
+
 
 ## Goal
 
@@ -41,7 +46,7 @@ Good coding !
 
 ## Help
 
-Crash, feature request, or suggest, please open an issue.
+Crash, feature request, or suggest, please [open an issue](https://github.com/win32service/win32service/issues).
 
 Help for the extension function, visit the [official PHP web site](http://php.net/manual/en/book.win32service.php)
 
@@ -49,5 +54,5 @@ Help for the extension function, visit the [official PHP web site](http://php.ne
 
 ## Contributing
 
-If you want contribute, you can open an issue for propose your idea. If you can writing the code, fork this repository and write the code, finally propose your enhancement by a pull request.
+If you want contribute, you can [open an issue](https://github.com/win32service/win32service/issues) for propose your idea. If you can writing the code, [fork the repository](https://github.com/win32service/win32service) and write the code, finally propose your enhancement by a pull request.
 

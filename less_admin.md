@@ -14,7 +14,7 @@ This table show all actions available in this extension and the right level need
 | [win32_pause_service](http://php.net/manual/en/function.win32-pause-service.php) | Service manager right |
 | [win32_query_service_status](http://php.net/manual/en/function.win32-query-service-status.php) | User right |
 | [win32_set_service_status](http://php.net/manual/en/function.win32-set-service-status.php) | Service account set in service configuration |
-| [win32_start_service_ctrl_dispatcher](http://php.net/manual/en/function.win32-start-service-ctrl-dispatcher.php) |  |
+| [win32_start_service_ctrl_dispatcher](http://php.net/manual/en/function.win32-start-service-ctrl-dispatcher.php) | Service account set in service configuration |
 | [win32_start_service](http://php.net/manual/en/function.win32-start-service.php) | Service manager right |
 | [win32_stop_service](http://php.net/manual/en/function.win32-stop-service.php) | Service manager right |
 |-------------------|-----------------|
