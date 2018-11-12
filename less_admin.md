@@ -22,7 +22,7 @@ This table show all actions available in this extension and the right level need
 ## Process
 
 * Create and add the service
-* Set the minimal ACL `RPWPRC` onto the service with `sc set`. Note this command overwite all ACL. Read first the current ACL with `sc show`. See https://support.microsoft.com/en-us/help/914392/best-practices-and-guidance-for-writers-of-service-discretionary-access-control-lists
+* Set the minimal ACL `RPWPRC` onto the service with `sc set`. Note this command overwite all ACL. Read first the current ACL with `sc show`. See [this Microsoft best practices](https://support.microsoft.com/en-us/help/914392/best-practices-and-guidance-for-writers-of-service-discretionary-access-control-lists)
 * Enable the win32service extension build from this branch into your PHP installation.
 * Use the account with low level privileges for run the PHP script for control the defined service. All work.
 Now attempt control another service without set the ACL. Nothing work.

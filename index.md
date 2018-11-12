@@ -12,9 +12,9 @@ This extension work only for the Windows Build of PHP and with all variant (NTS/
 
 You can download the pre-build extension from:
 
-* The official extension website for PHP: http://pecl.php.net/package/win32service This site provide the slow release.
-* The Github repository tag assets: https://github.com/win32service/win32service/releases The tags contains the pre-release build.
-* The Appveyor artifact https://ci.appveyor.com/project/macintoshplus/win32service The artifact are available since 6 month. The build for all change are available for test only.
+* The [official extension website for PHP](http://pecl.php.net/package/win32service) This site provide the slow release.
+* The [Github repository tag assets](https://github.com/win32service/win32service/releases) The tags contains the pre-release build.
+* The [Appveyor artifact](https://ci.appveyor.com/project/macintoshplus/win32service) The artifact are available since 6 month. The build for all change are available for test only.
 
 ## Installation
 
