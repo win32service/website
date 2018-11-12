@@ -27,6 +27,8 @@ Check in command line if the extension is correctly loaded with this command `ph
 
 If the output indicate this extension is not loaded, check the PHP configuration.
 
+__Note: The PHP version 7.0.0 and 7.1.0 dont work with this extension, use the latest version of PHP 7.0 and PHP 7.1.__
+
 ## Use
 
 The downloaded zip contain examples scripts used for testing. The file `service.php` contains an skeleton for implement one service in PHP.
