@@ -7,6 +7,7 @@ This projet provide an PHP extension for running a custom PHP script like a Wind
 This extension provide a wrapper between Windows Service Manager and your PHP script. The PHP version supported by this extension is 7.0.1 and later.
 This extension work only for the Windows Build of PHP and with all variant (NTS/TS and 32/64 bit).
 
+This extension requires the elevated privileges for work. However, you can [delegate for some actions](less_admin.md)
 
 ## Download
 

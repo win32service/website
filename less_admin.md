@@ -1,6 +1,6 @@
 # Use without administrator privileges
 
-This extension requires the administrator rights for some actions. However, some actions can be delegated to an service account for execution.
+This extension requires the administrator rights for some actions. However, you can limit the administrator right for 2 actions and delegate the others to an service account for execution.
 
 This table show all actions available in this extension and the right level needed for work:
 
