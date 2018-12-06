@@ -22,6 +22,8 @@ You can download the pre-build extension from:
 * The [Github repository tag assets](https://github.com/win32service/win32service/releases) The tags contains the pre-release build.
 * The [Appveyor artifact](https://ci.appveyor.com/project/macintoshplus/win32service) The artifact are available since 6 month. The build for all change are available for test only.
 
+> For PHP 7.3, the pre-built DLL is available for download here : [GitHub Releases](https://github.com/win32service/win32service/releases/tag/v0.3.1-RC1)
+
 ## Installation
 
 Unzip the package and copy the extention into the folder `ext` of your PHP installation.
