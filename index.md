@@ -1,5 +1,6 @@
 ---
 title: Win32Service
+menus: home
 ---
 
 # Win32Service projet
