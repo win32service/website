@@ -1,3 +1,8 @@
+---
+title: Service Library
+menus: library
+---
+
 The Service library for PHP
 ---------------------------
 
