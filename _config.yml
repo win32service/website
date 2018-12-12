@@ -1,2 +1,4 @@
 theme: jekyll-theme-midnight
 name: Win32Service
+plugins:
+- jekyll-menus
