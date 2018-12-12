@@ -4,8 +4,7 @@ title: Win32Service
 
 # Win32Service projet
 
-This projet provide an PHP extension for running a custom PHP script like a Windows Service.
-
+This projet provide an PHP extension for running a custom PHP script like a Windows Service and an PHP library for help to use the extension.
 
 ## Goal
 
