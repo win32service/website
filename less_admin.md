@@ -5,7 +5,7 @@ This extension requires the administrator rights for some actions. However, you 
 This table show all actions available in this extension and the right level needed for work:
 
 |-------------------|-----------------|
-| Action | Right Needed |
+| Action            | Right Needed    |
 |-------------------|-----------------|
 | [win32_continue_service](http://php.net/manual/en/function.win32-continue-service.php) | Service manager right |
 | [win32_create_service](http://php.net/manual/en/function.win32-create-service.php) | Administrator right |
@@ -21,8 +21,60 @@ This table show all actions available in this extension and the right level need
 
 ## Process
 
-* Create and add the service
-* Set the minimal ACL `RPWPRC` onto the service with `sc set`. Note this command overwite all ACL. Read first the current ACL with `sc show`. See [this Microsoft best practices](https://support.microsoft.com/en-us/help/914392/best-practices-and-guidance-for-writers-of-service-discretionary-access-control-lists)
-* Enable the win32service extension build from this branch into your PHP installation.
-* Use the account with low level privileges for run the PHP script for control the defined service. All work.
-Now attempt control another service without set the ACL. Nothing work.
+Open the right of the account for each service needed to manage. To open the right, see the [Microsoft Documentation](https://support.microsoft.com/en-us/help/914392/best-practices-and-guidance-for-writers-of-service-discretionary-access-control-lists)
+
+After the service is registered run this command to read the right set on the service 
+
+```cmd
+C:\> sc sdshow my_test_service
+```
+
+Replace the `my_test_service` by your service identifier to read the information.
+
+> Note : Run this command in cmd administrator console.
+
+The result example:
+
+```
+D:(A;;CCLCSWRPWPDTLOCRRC;;;SY)(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;BA)(A;;CCLCSWLOCRRC;;;IU)(A;;CCLCSWLOCRRC;;;SU)S:(AU;FA;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;WD)
+```
+
+Get the SID for the service account, with this command:
+```cmd
+C:\> wmic useraccount where (name='<username>' and domain='<domain_short_name>') get name,sid
+```
+
+The response:
+
+```
+Name        SID
+<username>  S-1-5-21-1553544295-1745644848-8500016-126000
+```
+
+Add the string into the right after changing the <SID>:
+
+```
+(A;;RPWPRCDT;;;<SID>)
+```
+
+The resulst will be gone:
+
+```
+(A;;RPWPRCDT;;;S-1-5-21-1553544295-1745644848-8500016-126000)
+```
+
+> Note : the `CCLCRPWPRCDT` represent the right to set for the SID. See the [Microsoft Documentation](https://support.microsoft.com/en-us/help/914392/best-practices-and-guidance-for-writers-of-service-discretionary-access-control-lists) to know the representation.
+
+The final right is like this:
+
+```
+D:(A;;CCLCSWRPWPDTLOCRRC;;;SY)(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;BA)(A;;CCLCSWLOCRRC;;;IU)(A;;CCLCSWLOCRRC;;;SU)(A;;RPWPRCDT;;;S-1-5-21-1553544295-1745644848-8500016-126000)S:(AU;FA;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;WD)
+```
+
+Now, set the new right for the service with the Administrator CMD window:
+
+```cmd
+C:\> sc scset my_test_service D:(A;;CCLCSWRPWPDTLOCRRC;;;SY)(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;BA)(A;;CCLCSWLOCRRC;;;IU)(A;;CCLCSWLOCRRC;;;SU)(A;;RPWPRCDT;;;S-1-5-21-1553544295-1745644848-8500016-126000)S:(AU;FA;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;WD)
+```
+
+Replace the `my_test_service` by your service identifier to write the security descriptor.
