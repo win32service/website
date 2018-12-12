@@ -1,6 +1,10 @@
 ---
 header:
-  - url: /api
-    title: API Documentation
-    identifier: api
+  - url: /
+    title: Win32Service
+    identifier: home
+
+  - url: /service-library
+    title: Service Library
+    identifier: library
 ---
