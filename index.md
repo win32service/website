@@ -58,5 +58,5 @@ Help for the extension function, visit the [official PHP web site](http://php.ne
 
 ## Contributing
 
-If you want contribute, you can [open an issue](https://github.com/win32service/win32service/issues) for propose your idea. If you can writing the code, [fork the repository](https://github.com/win32service/win32service) and write the code, finally propose your enhancement by a pull request.
+If you want to contribute, you can [open an issue](https://github.com/win32service/win32service/issues) for propose your idea. If you can writing the code, [fork the repository](https://github.com/win32service/win32service) and write the code, finally propose your enhancement by a pull request.
 
