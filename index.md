@@ -7,6 +7,19 @@ menus: home
 
 This projet provide an PHP extension for running a custom PHP script like a Windows Service and an PHP library for help to use the extension.
 
+## PHP Extension
+
+[![Build status](https://ci.appveyor.com/api/projects/status/7wqljie1knsrtfkh/branch/less_admin?svg=true)](https://ci.appveyor.com/project/macintoshplus/win32service/branch/less_admin)
+[![License](https://img.shields.io/badge/license-PHP_License-blue.svg)](http://www.php.net/license/3_01.txt)
+[![Documentation](https://img.shields.io/badge/manual-win32service-blue.svg)](http://php.net/manual/en/book.win32service.php)
+
+## Library
+
+[![Build status](https://ci.appveyor.com/api/projects/status/nm8kqrbokv49mckk?svg=true)](https://ci.appveyor.com/project/macintoshplus/win32servicelib)
+[![License](https://img.shields.io/packagist/l/win32service/service-library.svg)](https://github.com/win32service/service-library/blob/master/LICENSE)
+[![Documentation](https://img.shields.io/badge/manual-service_library-blue.svg)](service_library.md)
+
+
 ## Goal
 
 This extension provide a wrapper between Windows Service Manager and your PHP script. The PHP version supported by this extension is 7.0.1 and later.
