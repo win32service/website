@@ -38,9 +38,11 @@ __Note: The PHP version 7.0.0 and 7.1.0 dont work with this extension, use the l
 
 ## Use
 
-The downloaded zip contain examples scripts used for testing. The file `service.php` contains an skeleton for implement one service in PHP.
+You can use this [PHP service-library](https://github.com/win32service/service-library) for implements your service runtime and management scripts.
 
-For use this example, open an command line window in administrator mode. Go to the example folder and run this command `php service.php create` for install the test service.
+Otherwise , the downloaded zip contains examples scripts used for testing. The file `service.php` contains a skeleton for implement one service in PHP.
+
+To use this example, open a command line window in administrator mode. Go to the example folder and run this command `php service.php create` to installing the test service.
 
 Now a new service is added into the Windows service manager. You can start, stop this service from the Windows service manager or from the administrator command line.
 
