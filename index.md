@@ -17,7 +17,7 @@ This projet provide an PHP extension for running a custom PHP script like a Wind
 
 [![Build status](https://ci.appveyor.com/api/projects/status/nm8kqrbokv49mckk?svg=true)](https://ci.appveyor.com/project/macintoshplus/win32servicelib)
 [![License](https://img.shields.io/packagist/l/win32service/service-library.svg)](https://github.com/win32service/service-library/blob/master/LICENSE)
-[![Documentation](https://img.shields.io/badge/manual-service_library-blue.svg)](https://https://win32service.github.io/service_library.html)
+[![Documentation](https://img.shields.io/badge/manual-service_library-blue.svg)](https://win32service.github.io/service_library.html)
 
 
 ## Goal
