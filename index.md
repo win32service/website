@@ -13,12 +13,14 @@ For the latest news for this project, search on Twitter the [#Win32Service hasht
 
 ## PHP Extension
 
+[![Repository](https://img.shields.io/badge/GitHub-win32service%2Fwin32service-blue.svg)](https://github.com/win32service/win32service)
 [![Build status](https://ci.appveyor.com/api/projects/status/7wqljie1knsrtfkh/branch/v0.4.x?svg=true)](https://ci.appveyor.com/project/macintoshplus/win32service/branch/v0.4.x)
 [![License](https://img.shields.io/badge/license-PHP_License-blue.svg)](http://www.php.net/license/3_01.txt)
 [![Documentation](https://img.shields.io/badge/manual-win32service-blue.svg)](http://php.net/manual/en/book.win32service.php)
 
 ## Library
 
+[![Repository](https://img.shields.io/badge/GitHub-win32service%2Fservice--library-blue.svg)](https://github.com/win32service/service-library)
 [![Build status](https://ci.appveyor.com/api/projects/status/nm8kqrbokv49mckk?svg=true)](https://ci.appveyor.com/project/macintoshplus/win32servicelib)
 [![License](https://img.shields.io/packagist/l/win32service/service-library.svg)](https://github.com/win32service/service-library/blob/master/LICENSE)
 [![Documentation](https://img.shields.io/badge/manual-service_library-blue.svg)](https://win32service.github.io/service_library.html)
