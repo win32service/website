@@ -100,7 +100,7 @@ Replace the `my_test_service` by your service identifier to write the security d
 
 > Prerequisites : [Composer](https://getcomposer.org) is installed on your computer.
 
-After clone or download this repository open CMD window and go to the project directory.
+After clone or download the [repository](https://github.com/win32service/service-library) open CMD window and go to the project directory.
 Run this command for download needed dependencies:
 
 ```cmd
@@ -115,6 +115,6 @@ c:\> vendor/bin/atoum.bat
 
 ## Contributing
 
-If you want to contribute, you can open an issue to propose your idea.
-If you can write the code, fork this repository and write the code, finally submit your enhancement by a pull request.
+If you want to contribute, you can [open an issue](https://github.com/win32service/service-library/issues) to propose your idea.
+If you can write the code, fork the [repository](https://github.com/win32service/service-library) and write the code, finally submit your enhancement by a pull request.
 
