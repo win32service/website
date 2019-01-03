@@ -3,6 +3,8 @@ title: Service Library
 menus: library
 ---
 
+[return to home](index.md)
+
 The Service library for PHP
 ---------------------------
 
