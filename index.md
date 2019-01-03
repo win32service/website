@@ -9,7 +9,7 @@ This projet provide an PHP extension for running a custom PHP script like a Wind
 
 ## News
 
-For the latest news for this project, search on Twitter the [#Win32Service hashtag](https://twitter.com/hashtag/Win32Service).
+For the latest news for this project, search on Twitter the [#Win32Service hashtag](https://twitter.com/hashtag/Win32Service) [![#Win32Service hashtag](https://img.shields.io/twitter/url/https/github.com/win32service/win32service.svg?style=social)](https://twitter.com/hashtag/Win32Service).
 
 ## PHP Extension
 
