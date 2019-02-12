@@ -97,6 +97,30 @@ C:\> sc sdset my_test_service D:(A;;CCLCSWRPWPDTLOCRRC;;;SY)(A;;CCDCLCSWRPWPDTLO
 
 Replace the `my_test_service` by your service identifier to write the security descriptor.
 
+## Running a service
+
+See the example ['example/service.php'](https://github.com/win32service/service-library/blob/master/examples/service.php).
+
+For running a script as a service, you must be extending the `Win32Service\Model\AbstractServiceRunner` class.
+The `run` function is called into the loop and do return before 30s.
+If the `run` execution duration is over 30s, the service is marked stopped by the Windows Service Manager.
+In this case, the method `lastRunIsTooSlow` is called and the first argument contains the last `run` execution duration.
+
+### Automatic restart the service
+
+Since the version 0.4.0 of the Win32Service extension, you can define the exite mode and exit code.
+If the exit mode is not gracefully and the exit code is geater than 0, the recovery setting of the Windows service manager can be used.
+
+In this case, define the action for first, second and next fail of the service to `restart` value.
+
+
+### Usage with Symfony
+
+For use with Symfony, define an `Command` and inject into your service class. Add an InputOption named `max-run` for define
+the number of loop executed between each service restart.
+
+In the `execute` function call the service `doRun` function with the max-run value.
+
 
 ## Run tests
 
