@@ -17,6 +17,7 @@ This table show all actions available in this extension and the right level need
 | [win32_get_last_control_message](http://php.net/manual/en/function.win32-get-last-control-message.php) | Service account set in service configuration |
 | [win32_pause_service](http://php.net/manual/en/function.win32-pause-service.php) | Service manager right |
 | [win32_query_service_status](http://php.net/manual/en/function.win32-query-service-status.php) | User right |
+| [win32_send_custom_control](http://php.net/manual/en/function.win32-send-custom-control.php) | User right |
 | [win32_start_service_exit_mode](http://php.net/manual/en/function.win32-start-service-exit-mode.php) | Service account set in service configuration |
 | [win32_start_service_exit_code](http://php.net/manual/en/function.win32-start-service-exit-code.php) | Service account set in service configuration |
 | [win32_set_service_status](http://php.net/manual/en/function.win32-set-service-status.php) | Service account set in service configuration |
