@@ -139,8 +139,11 @@ And run Atoum for tests:
 c:\> vendor/bin/atoum.bat
 ```
 
+## Help
+
+Crash, feature request, or suggest, please [open an issue](https://github.com/win32service/service-library/issues).
+
 ## Contributing
 
 If you want to contribute, you can [open an issue](https://github.com/win32service/service-library/issues) to propose your idea.
 If you can write the code, fork the [repository](https://github.com/win32service/service-library) and write the code, finally submit your enhancement by a pull request.
-

@@ -3,9 +3,12 @@ title: Win32Service
 menus: home
 ---
 
-# Win32Service projet
+# Win32Service project
 
-This projet provide an PHP extension for running a custom PHP script like a Windows Service and an PHP library for help to use the extension.
+This project provides most elements:
+* a PHP extension for running a custom PHP script like a Windows Service
+* a PHP library for help to use the extension
+* a Bundle to integrating the library into your Symfony 4 project
 
 ## News
 
@@ -18,17 +21,39 @@ For the latest news for this project, search on Twitter the [#Win32Service hasht
 [![License](https://img.shields.io/badge/license-PHP_License-blue.svg)](http://www.php.net/license/3_01.txt)
 [![Documentation](https://img.shields.io/badge/manual-win32service-blue.svg)](http://php.net/manual/en/book.win32service.php)
 
-## Library
+## PHP Library
 
 [![Repository](https://img.shields.io/badge/GitHub-win32service%2Fservice--library-blue.svg)](https://github.com/win32service/service-library)
 [![Build status](https://ci.appveyor.com/api/projects/status/nm8kqrbokv49mckk?svg=true)](https://ci.appveyor.com/project/macintoshplus/win32servicelib)
 [![License](https://img.shields.io/packagist/l/win32service/service-library.svg)](https://github.com/win32service/service-library/blob/master/LICENSE)
 [![Documentation](https://img.shields.io/badge/manual-service_library-blue.svg)](https://win32service.github.io/service_library.html)
 
+## Symfony Bundle
+
+[![Repository](https://img.shields.io/badge/GitHub-win32service%2FWin32ServiceBundle-blue.svg)](https://github.com/win32service/Win32ServiceBundle)
+[![License](https://img.shields.io/packagist/l/win32service/service-library.svg)](https://github.com/win32service/Win32ServiceBundle/blob/master/LICENSE)
+[![Documentation](https://img.shields.io/badge/manual-bundle-blue.svg)](https://win32service.github.io/bundle.html)
+
+## Requirements
+
+### For the extension
+
+* Windows 7 or newer, Windows 2012 R2 or newer
+* PHP 7.1 or newer for Windows
+
+### For the library
+
+* You can install this library on all operating system
+* PHP 7.1 or newer
+
+### For the Symfony bundle
+
+* You can install this Bundle on all operating system
+* Symfony 4 or newer
 
 ## Goal
 
-This extension provide a wrapper between Windows Service Manager and your PHP script. The PHP version supported by this extension is 7.0.1 and later.
+This extension provide a wrapper between Windows Service Manager and your PHP script. The PHP version supported by this extension is 7.1.1 and later.
 This extension work only for the Windows Build of PHP and with all variant (NTS/TS and 32/64 bit).
 
 This extension requires the elevated privileges for work. However, you can [delegate for some actions](less_admin.md)
@@ -46,17 +71,18 @@ You can download the pre-build extension from:
 
 Unzip the package and copy the extention into the folder `ext` of your PHP installation.
 
-After copy, edit the the file `php.ini` and add one line for load the extension depending on your version of PHP (7.0/7.1/7.2/7.3, x64/x86, ZTS/NTS). In example for PHP 7.3 in TS mode and 32 bit architecture : `extension = php_win32service-7.3-ts-vc14-x86.dll` (or use the short name available since PHP 7.2 : `extension = win32service` if the extension file is named `php_win32service.dll`).
+After copy, edit the the file `php.ini` and add one line for load the extension depending on your version of PHP (7.1/7.2/7.3, x64/x86, ZTS/NTS). In example for PHP 7.3 in TS mode and 32 bit architecture : `extension = php_win32service-7.3-ts-vc14-x86.dll` (or use the short name available since PHP 7.2 : `extension = win32service` if the extension file is named `php_win32service.dll`).
 
 Check in command line if the extension is correctly loaded with this command `php --ri win32service`.
 
 If the output indicate this extension is not loaded, check the PHP configuration.
 
-__Note: The PHP version 7.0.0 and 7.1.0 dont work with this extension, use the latest version of PHP 7.0 and PHP 7.1.__
+__Note: The PHP version 7.1.0 dont work with this extension, use the latest version of PHP 7.1.__
 
 ## Use
 
 You can use this [PHP service-library](https://github.com/win32service/service-library) for implements your service runtime and management scripts.
+If you project is based on Symfony 4+, you can use [the bundle](https://github.com/win32service/Win32ServiceBundle) to integrate the library into Symfony and reduce the number of codes do you need to write.
 
 Otherwise , the downloaded zip contains examples scripts used for testing. The file `service.php` contains a skeleton for implement one service in PHP.
 
@@ -72,7 +98,9 @@ Crash, feature request, or suggest, please [open an issue](https://github.com/wi
 
 Help for the extension function, visit the [official PHP web site](http://php.net/manual/en/book.win32service.php)
 
-[Extension PHP pour réaliser des services Windows [FR]](https://nahan.fr/extension-php-pour-realiser-des-services-windows/)
+Blog post: [Extension PHP pour réaliser des services Windows [FR]](https://nahan.fr/extension-php-pour-realiser-des-services-windows/)
+
+Blog post: [Nouveautés de Win32Service 0.4 [FR]](https://nahan.fr/nouveautes-de-win32service-0-4/)
 
 ## Contributing
 
