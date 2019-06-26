@@ -102,9 +102,7 @@ Blog post: [Extension PHP pour réaliser des services Windows [FR]](https://naha
 
 Blog post: [Nouveautés de Win32Service 0.4 [FR]](https://nahan.fr/nouveautes-de-win32service-0-4/)
 
-Blog posts: [[Win32Service] PHP 7.0 and 7.1 support [EN]](https://nahan.fr/win32service-php-7-0-and-7-1-support/)
-
-Blog posts: [[Win32Service] Support de PHP 7.0 et PHP 7.1 [FR]](https://nahan.fr/win32service-support-de-php-7-0-et-php-7-1/)
+Blog posts: [[Win32Service] PHP 7.0 and 7.1 support [EN]](https://nahan.fr/win32service-php-7-0-and-7-1-support/) and [[Win32Service] Support de PHP 7.0 et PHP 7.1 [FR]](https://nahan.fr/win32service-support-de-php-7-0-et-php-7-1/)
 
 ## Contributing
 
