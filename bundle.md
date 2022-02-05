@@ -1,6 +1,7 @@
 ---
 title: Win32Service Bundle for Symfony
-menus: library
+menus: bundle
+permalink: /bundle
 ---
 
 [return to home](index.md)

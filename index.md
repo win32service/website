@@ -1,6 +1,7 @@
 ---
 title: Win32Service
 menus: home
+permalink: /
 ---
 
 # Win32Service project

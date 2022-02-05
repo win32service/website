@@ -1,6 +1,7 @@
 ---
 title: Service Library
 menus: library
+permalink: /service-library
 ---
 
 [return to home](index.md)

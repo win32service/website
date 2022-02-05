@@ -1,4 +1,6 @@
-
+---
+permalink: /less-admin
+---
 
 [return to home](index.md)
 
